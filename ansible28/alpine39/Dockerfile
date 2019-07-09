@@ -30,6 +30,7 @@ RUN apk --no-cache add \
     pip install --upgrade pip cffi && \
     pip install ansible && \
     pip install mitogen ansible-lint && \
+    pip install yamllint gitlint yapf white && \
     pip install --upgrade pywinrm && \
     apk del build-dependencies && \
     rm -rf /var/cache/apk/*
